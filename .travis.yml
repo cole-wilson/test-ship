@@ -1,0 +1,9 @@
+os: mac-os
+language: shell
+
+install:
+  - sudo pip3 install pyinstaller
+
+script:
+  - sudo pyinstaller --onefile shipsnake/__main__.py
+  - sudo ls dist/*
